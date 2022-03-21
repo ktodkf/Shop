@@ -1,0 +1,262 @@
+body
+{
+    background: white;
+    margin: 0;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-family: Bradley Hand, cursive;
+}
+
+button{
+  cursor: pointer;
+}
+
+
+.profile{
+  position: relative;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 60px;
+  margin-left: 20px;
+}
+
+.profile_info{
+  transition: 0.2s;
+  width: 142px;
+  height: 90px;
+  display: flex;
+  position: absolute;
+  top: 70px;
+  left: -82px;
+  /* background: url('../images/info_block.svg') no-repeat center; */
+  background: white;
+  /* color: white; */
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  visibility:hidden;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+hr{
+  border:none;
+  background: rgba(0, 0, 0, 0.5);
+  height: 1px;
+}
+
+.profile:hover .profile_info{
+left: -82px;
+visibility:visible;
+}
+
+.exit_block{
+  width: inherit;
+}
+
+.list
+{
+    font-size: 19px;
+    font-family: Bradley Hand, cursive;
+    color: #0e345a;
+    padding: 10px 20px 10px 45px;
+    text-decoration: none;
+    display: block;
+    background-position: 21px;
+    box-sizing: border-box;
+    transition: 0.4s;
+    background-position-y: 17px;
+    /* background: rgba(255, 0, 0, 0.5); */
+}
+
+.list_button
+{
+    color:  #0e345a;
+    font-family: Bradley Hand, cursive;
+    font-size: 19px;
+    margin-left: 2vw;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    background: black;
+    color: white;
+    height:40px;
+}
+
+.list_button a:visited{
+  color: white;
+}
+
+.list_button:hover
+{
+    background-color: #0e345a;
+    color: white;
+}
+.list_button:active{
+  background: red;
+}
+header
+{
+    display: flex;
+    padding: 10px 50px 10px 50px;
+    height: 50px;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 90%;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    z-index: 1;
+
+}
+
+header a{
+  text-decoration: none;
+}
+
+.background
+{
+    width: 100%;
+    height: 40vw;
+    margin-top: 70px;
+}
+
+.logo_img
+{
+    width:  100px;
+    height: 50px;
+}
+
+.book_one_block
+{
+    margin-top: -2vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.block_book_category
+{
+    width: 80%;
+    height: 15vw;
+    padding: 1vw;
+    margin: auto auto 2vw auto;
+}
+
+.book_one
+{
+    width: 8vw;
+    height: 10vw;
+}
+
+.name_best_month
+{
+    text-align: center;
+    font-size: 47px;
+    color: white;
+    font-family: Bradley Hand, cursive;
+    margin: 8vw 0 2vw 0;
+}
+
+.name_best_rec
+{
+    text-align: center;
+    font-size: 47px;
+    color: white;
+    font-family: Bradley Hand, cursive;
+    margin: 0 0 5vw 0;
+}
+
+.block_book
+{
+    width: 15%;
+    text-align: center;
+}
+
+.name_best_one
+{
+    margin-bottom:6vw;
+    color: #0e345a;
+    text-align: center;
+    font-size: 47px;
+    font-family: Bradley Hand, cursive;
+}
+.background_blue
+{
+    background-color: #0e345a;
+    height: 100vw;
+    width: 100%;
+    margin-top: -93vw;
+}
+
+.button_read
+{
+    width: 12vw;
+    height: 3vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 2vw;
+    border-color: white;
+    color:  #0e345a;
+    border-width: 3px;
+    font-family: Bradley Hand, cursive;
+}
+
+.button_read:hover
+{
+    background-color: white;
+    color: #0e345a;
+}
+
+.list_footer
+{
+    list-style-type: none;
+    color: #0e345a;
+    font-family: Bradley Hand, cursive;
+    font-size: 15px;
+    margin-bottom: 1vw;
+
+}
+
+.footer
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5vw;
+}
+.list_footer_name
+{
+    color: #0e345a;
+    font-family: Bradley Hand, cursive;
+    font-size: 17px;
+    margin-bottom: 2vw;
+}
+
+.book_title
+{
+    font-family: Bradley Hand, cursive;
+    color: white;
+}
+
+.book_button
+{
+    width: 7vw;
+    height: 3vw;
+    background: transparent;
+    color: white;
+    border-color: white;
+    border-radius: 2px;
+    margin-top: 2vw;
+}
+.entry_link{
+
+}
+.entry_link:hover{
+background:
+}
+
+.entry_link:active{
+background: red;
+}
