@@ -1,0 +1,7 @@
+$link=mysqli_connect(''localhost', 'root', '', 'library'');
+$query=mysqli_query($link,'SELECT * FROM table') or die(mysqli_error);
+$foo=array();
+while($bar=mysqli_fetch_assoc($query)){
+    $foo[]=$bar;
+}
+file_put_contents('путь_к_файлу',json_encode($foo));

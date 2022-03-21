@@ -1,0 +1,31 @@
+filter_var-фильтрует строку как обычную, удаляет разные символы HTML и другие, которые не надо добавлять в бд
+trim - удаляет лишние пробелы
+md5- хеширует пароль для бд + любая строка (соль)
+setcookie - устанавливает куки для авторизации + time время жизни авторизации (например час в секундах) + "/" значит что действует вообще на всех страницах сайта
+<?php
+    if($_COOKIE['user'] == ''):
+?>
+
+<?php else: ?>
+    <p>Привет, <?=$_COOKIE['user']?>. Чтобы выйти нажмите <a href="php/exit.php">здесь</a>.</p>
+<?php endif ?>
+
+
+
+
+<div id="forms">
+    <h2 id="write">Авторизация</h2>
+    <p> Вы еще не зарегестрированы в нашем магазине?  <a href="../signup.php">Зарегистрироваться</a></p>
+    <form name='form' onsubmit='return validate()'>
+        <input type='text' name='name' placeholder="Введите имя"> <span style='color:red' id='namef'></span><br />
+        <div class="password">
+            <input type="password" id="password-input" placeholder="Введите пароль" name="password"><span style='color:red' id='passwordf'></span><br />
+            <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+        </div>
+
+        <input class="submit" type='submit' value='Войти'  onclick=" location.href='index.php'  ">
+    </form>
+
+
+
+</div>
